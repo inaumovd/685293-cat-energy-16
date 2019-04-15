@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
@@ -50,7 +51,7 @@
                 <td>700 Р.</td>
               </tr>
             </table>
-            <button class="market-item__order-button button" type="button">Заказать</button>
+            <button class="market-item__order-button button button--order" type="button">Заказать</button>
           </li>
           <li class="catalog__item market-item">
             <h3 class="market-item__title">Cat energy pro 500 г</h3>
@@ -69,7 +70,7 @@
                 <td>1000 Р.</td>
               </tr>
             </table>
-            <button class="market-item__order-button button" type="button">Заказать</button>
+            <button class="market-item__order-button button button--order" type="button">Заказать</button>
           </li>
           <li class="catalog__item market-item">
             <h3 class="market-item__title">Cat energy pro 500 г</h3>
@@ -88,7 +89,7 @@
                 <td>700 Р.</td>
               </tr>
             </table>
-            <button class="market-item__order-button button" type="button">Заказать</button>
+            <button class="market-item__order-button button button--order" type="button">Заказать</button>
           </li>
           <li class="catalog__item market-item">
             <h3 class="market-item__title">Cat energy pro 500 г</h3>
@@ -107,7 +108,7 @@
                 <td>1000 Р.</td>
               </tr>
             </table>
-            <button class="market-item__order-button button" type="button">Заказать</button>
+            <button class="market-item__order-button button button--order" type="button">Заказать</button>
           </li>
           <li class="catalog__item market-item">
             <h3 class="market-item__title">Cat energy pro 500 г</h3>
@@ -126,7 +127,7 @@
                 <td>400 Р.</td>
               </tr>
             </table>
-            <button class="market-item__order-button button" type="button">Заказать</button>
+            <button class="market-item__order-button button button--order" type="button">Заказать</button>
           </li>
           <li class="catalog__item market-item">
             <h3 class="market-item__title">Cat energy pro 500 г</h3>
@@ -145,7 +146,7 @@
                 <td>700 Р.</td>
               </tr>
             </table>
-            <button class="market-item__order-button button" type="button">Заказать</button>
+            <button class="market-item__order-button button button--order" type="button">Заказать</button>
           </li>
           <li class="catalog__item market-item">
             <h3 class="market-item__title">Cat energy pro 500 г</h3>
@@ -164,13 +165,13 @@
                 <td>500 Р.</td>
               </tr>
             </table>
-            <button class="market-item__order-button button" type="button">Заказать</button>
+            <button class="market-item__order-button button button--order" type="button">Заказать</button>
           </li>
         </ul>
         <div class="catalog__more more">
           <p class="more__title">Показать еще 100500 товаров</p>
-          <p class="more__title">На самом деле вкумов гораздо больше</p>
-          <button class="more__button button" type="button">Показать все</button>
+          <p class="more__min-title">На самом деле вкумов гораздо больше!</p>
+          <button class="more__button button button--more" type="button">Показать все</button>
         </div>
       </section>
     </main>
@@ -182,13 +183,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Instagram</a>
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
         </ul>
       </div>
