@@ -1,5 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
+@import "blocks/page-header.less";
 @import "blocks/main-nav.less";
 @import "blocks/site-list.less";
 @import "blocks/intro.less";
@@ -14,8 +15,14 @@
 @import "blocks/more.less";
 
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
