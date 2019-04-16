@@ -1,3 +1,20 @@
-// .page-header__logo-link {
-//   min-height: 65px;
-// }
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo-container {
+  height: 65px;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    justify-content: space-between;
+  }
+}

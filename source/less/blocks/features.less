@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
 }
@@ -21,4 +20,28 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__list {
+    flex-wrap: nowrap;
+  }
 }

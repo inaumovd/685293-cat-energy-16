@@ -1,10 +1,10 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
-  line-height: 20px;
   font-weight: 500;
   letter-spacing: normal;
   text-align: center;
@@ -21,4 +21,10 @@
 
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    flex-direction: row;
+  }
 }
