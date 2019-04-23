@@ -1,3 +1,7 @@
+.programms {
+  margin: 0 20px;
+}
+
 .programms__list {
   display: flex;
   flex-direction: column;
@@ -10,21 +14,26 @@
 
 .programms__item {
   display: block;
+  margin-bottom: 20px;
+  padding: 20px;
 
   background-color: @mainGray;
 }
 
 .programms__title {
   margin: 0;
-  padding: 0;
+  margin-bottom: 21px;
+  padding: 10px;
 
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .programms__description {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 
   font-family: "Arial", sans-serif;
@@ -35,12 +44,36 @@
 .programms__link {
   color: #111111;
 
+  line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 @media (min-width: 768px) {
   .programms__list {
-    flex-direction: row;
+    flex-direction: column;
+  }
+
+  .programms__item {
+    padding: 52px;
+  }
+
+  .programms__title {
+    padding: 0;
+
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .programms__description {
+    padding-right: 246px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programms__link {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
