@@ -22,7 +22,7 @@
   border-bottom: 1px solid @mainGray;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tabletWidth) {
   .site-list {
     flex-direction: row;
     align-items: center;
@@ -33,5 +33,11 @@
     line-height: 25px;
 
     border: none;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .site-list__link {
+    color: white;
   }
 }

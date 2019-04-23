@@ -49,3 +49,27 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (min-width: @desktopWidth) {
+  .programms__list {
+    flex-direction: row;
+  }
+
+  .main-nav {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 720px;
+      height: 696px;
+
+      background-image: url("/img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+
+      z-index: -100;
+    }
+  }
+}
