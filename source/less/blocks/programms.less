@@ -1,7 +1,3 @@
-.programms {
-  margin: 0 20px;
-}
-
 .programms__list {
   display: flex;
   flex-direction: column;
@@ -35,6 +31,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
+  padding-right: 16px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -50,6 +47,11 @@
 }
 
 @media (min-width: @tabletWidth) {
+  .programms {
+    width: 708px;
+    margin: 0 auto;
+  }
+
   .programms__list {
     flex-direction: column;
   }
@@ -79,7 +81,17 @@
 }
 
 @media (min-width: @desktopWidth) {
+  .programms {
+    width: 1220px;
+  }
+
   .programms__list {
     flex-direction: row;
+  }
+
+  .programms__item {
+    box-sizing: border-box;
+    margin-right: 80px;
+    width: 570px;
   }
 }

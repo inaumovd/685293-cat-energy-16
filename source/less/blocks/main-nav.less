@@ -50,18 +50,20 @@
   }
 }
 
-@media (min-width: @desktopWidth) {
-  .programms__list {
-    flex-direction: row;
+@media (min-width: @tabletWidth) {
+  .main-nav__toggle {
+    display: none;
   }
+}
 
+@media (min-width: @desktopWidth) {
   .main-nav {
     &::after {
       content: "";
 
       position: absolute;
-      top: 0;
-      right: 0;
+      top: -53px;
+      right: -110px;
 
       width: 720px;
       height: 696px;

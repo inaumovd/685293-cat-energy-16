@@ -1,5 +1,8 @@
 .social {
   width: 100%;
+  padding: 24px 0;
+
+  border-bottom: 1px solid black;
 }
 
 .social__list {
@@ -17,4 +20,12 @@
   height: 19px;
 
   background-color: black;
+}
+
+@media (min-width: @tabletWidth) {
+  .social {
+    padding: 0;
+
+    border: none;
+  }
 }
