@@ -14,10 +14,23 @@
 }
 
 @media (min-width: @tabletWidth) {
+  .catalog__title {
+    font-size: 60px;
+
+    border-bottom: none;
+  }
+
   .catalog__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .catalog {
+    width: 1220px;
+    margin: 0 auto;
   }
 }
