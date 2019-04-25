@@ -1,3 +1,44 @@
-// .page-header__logo-link {
-//   min-height: 65px;
-// }
+.page-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  display: block;
+
+  padding: 11px 20px 15px 20px;
+
+  border-bottom: 1px solid @mainGray;
+}
+
+.page-header__logo svg {
+  width: 191px;
+  height: 39px;
+}
+
+@media (min-width: @tabletWidth) {
+  .page-header {
+    padding: 24px 29px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 708px;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    border: none;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .page-header {
+    width: 1440px;
+    padding: 53px 110px;
+  }
+}

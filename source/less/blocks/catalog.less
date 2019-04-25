@@ -1,15 +1,36 @@
 .catalog__title {
   margin: 0;
-  padding: 0;
+  padding: 31px 20px;
 
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
+  text-align: left;
+
+  border-bottom: 1px solid @mainGray;
 }
 
 .catalog__list {
-  margin: 0;
-  padding: 0;
+  .list-reset();
+}
 
-  list-style: none;
+@media (min-width: @tabletWidth) {
+  .catalog__title {
+    font-size: 60px;
+
+    border-bottom: none;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktopWidth) {
+  .catalog {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
