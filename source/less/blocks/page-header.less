@@ -3,14 +3,13 @@
   display: flex;
   flex-direction: column;
 
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
 }
 
 .page-header__logo {
   display: block;
 
-  padding: 11px 20px 15px 20px;
+  padding: 12px 20px 11px 20px;
 
   border-bottom: 1px solid @mainGray;
 }
@@ -18,16 +17,19 @@
 .page-header__logo svg {
   width: 191px;
   height: 39px;
+
+  // width: 210px;
+  // height: 58px;
 }
 
 @media (min-width: @tabletWidth) {
   .page-header {
-    padding: 24px 29px;
+    padding: 20px 30px 20px 11px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    width: 708px;
+    width: 100%;
   }
 
   .page-header__logo {
@@ -38,7 +40,6 @@
 
 @media (min-width: @desktopWidth) {
   .page-header {
-    width: 1440px;
-    padding: 53px 110px;
+    padding: 52px 91px 52px 20px;
   }
 }
