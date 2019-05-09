@@ -1,0 +1,28 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 18px 0;
+}
+
+.copyright__link {
+  margin: 0;
+  padding: 0;
+  display: block;
+
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  color: @textGray;
+
+  text-decoration: none;
+}
+
+@media (min-width: @tabletWidth) {
+  .copyright {
+    justify-content: flex-end;
+    padding: 0;
+  }
+}

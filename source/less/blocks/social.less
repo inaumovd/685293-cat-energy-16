@@ -1,0 +1,33 @@
+.social {
+  width: 100%;
+  padding: 22px 0;
+
+  border-bottom: 1px solid @lineGray;
+}
+
+.social__list {
+  .list-reset();
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding: 0 60px;
+}
+
+.social__link {
+  display: block;
+
+  width: 19px;
+  height: 19px;
+
+  background-color: black;
+}
+
+@media (min-width: @tabletWidth) {
+  .social {
+    padding: 0;
+
+    border: none;
+  }
+}
