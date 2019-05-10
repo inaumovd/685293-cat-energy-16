@@ -71,17 +71,25 @@
 
 @media (min-width: @tabletWidth) {
   .features {
-    width: 708px;
+    width: auto;
     margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 48px;
   }
 }
 
 @media (min-width: @desktopWidth) {
   .features {
-    width: 1220px;
+    width: auto;
+    padding: 75px 110px 0 110px;
   }
 
   .features__list {
     flex-wrap: nowrap;
+    padding-right: 0;
+  }
+
+  .features__item {
+    width: 235px;
   }
 }

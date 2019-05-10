@@ -14,17 +14,14 @@
   border-bottom: 1px solid @mainGray;
 }
 
-.page-header__logo svg {
+.page-header__logo-image {
   width: 191px;
   height: 39px;
-
-  // width: 210px;
-  // height: 58px;
 }
 
 @media (min-width: @tabletWidth) {
   .page-header {
-    padding: 20px 30px 20px 11px;
+    padding: 20px 30px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -36,10 +33,20 @@
     padding: 0;
     border: none;
   }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
 }
 
 @media (min-width: @desktopWidth) {
   .page-header {
-    padding: 52px 91px 52px 20px;
+    padding: 52px 110px;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

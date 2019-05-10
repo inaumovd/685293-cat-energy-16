@@ -37,10 +37,9 @@
   text-transform: uppercase;
 }
 
-// .intro__product-image {
-//   display: block;
-//   margin: 0 auto;
-// }
+.intro__product-image {
+  margin: 0 auto;
+}
 
 .intro__button {
   width: 100%;
@@ -53,10 +52,10 @@
     position: relative;
     display: block;
 
-    width: 708px;
+    width: auto;
     height: 841px; //Временно
 
-    padding-left: 87px;
+    padding-left: 117px;
     padding-top: 32px;
     margin: 0 auto;
 
@@ -85,8 +84,9 @@
 
   .intro__product-image {
     position: absolute;
-
     z-index: -1;
+    top: 233px;
+    left: 29px;
   }
 
   .intro__button {
@@ -98,12 +98,18 @@
 
 @media (min-width: @desktopWidth) {
   .intro {
-    width: 1200px;
     padding-left: 193px;
+    padding-top: 53px;
     height: 521px; //Временно
   }
 
   .intro__title {
-    padding: 0 567px 0 0;
+    padding: 0 654px 0 0;
+  }
+
+  .intro__product-image {
+    top: -32px;
+    left: 0;
+    right: -229px;
   }
 }

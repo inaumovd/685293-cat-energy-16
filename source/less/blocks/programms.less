@@ -1,3 +1,7 @@
+.programms {
+  padding: 0 20px;
+}
+
 .programms__list {
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@
 
 .programms__item {
   display: block;
-  margin: 0 20px 20px 20px;
+  margin-bottom: 20px;
   padding: 19px;
   padding-top: 32px;
 
@@ -56,8 +60,9 @@
 
 @media (min-width: @tabletWidth) {
   .programms {
-    width: 708px;
+    width: auto;
     margin: 0 auto;
+    padding: 0 30px;
   }
 
   .programms__list {
@@ -96,16 +101,28 @@
 
 @media (min-width: @desktopWidth) {
   .programms {
-    width: 1220px;
+    width: auto;
+    padding: 82px 110px 0 110px;
   }
 
   .programms__list {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .programms__item {
     box-sizing: border-box;
-    margin-right: 80px;
+    margin: 0;
     width: 570px;
+  }
+
+  .programms__title {
+    padding-left: 162px;
+    margin-bottom: 75px;
+  }
+
+  .programms__description {
+    padding-right: 0;
+    margin-bottom: 10px;
   }
 }
